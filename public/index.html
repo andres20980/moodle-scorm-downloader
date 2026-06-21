@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodle SCORM PDF Downloader</title>
+  <!-- Google Fonts Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons for visual elegance -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-decor">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+  </div>
+
+  <main class="container">
+    <header class="app-header">
+      <div class="logo-container">
+        <i class="fa-solid fa-graduation-cap app-logo"></i>
+      </div>
+      <h1>Moodle SCORM <span class="gradient-text">Downloader</span></h1>
+      <p class="subtitle">Descarga todo el temario y recursos en formato PDF de forma automatizada y directa.</p>
+    </header>
+
+    <section class="glass-card" id="form-section">
+      <form id="downloader-form">
+        <!-- Moodle URL Field -->
+        <div class="form-group">
+          <label for="targetUrl"><i class="fa-solid fa-link icon-label"></i> URL del Curso o Actividad SCORM</label>
+          <input 
+            type="url" 
+            id="targetUrl" 
+            name="targetUrl" 
+            placeholder="https://campusonline.patronatolosdolores.es/mod/scorm/view.php?id=5800" 
+            required
+            autocomplete="url"
+          >
+          <span class="helper-text">Pega la URL de la página principal del curso o de un módulo SCORM específico.</span>
+        </div>
+
+        <!-- Login Mode Selector -->
+        <div class="form-group">
+          <label><i class="fa-solid fa-key icon-label"></i> Método de Autenticación</label>
+          <div class="toggle-container">
+            <button type="button" class="toggle-btn active" data-mode="credentials">
+              <i class="fa-solid fa-user-lock"></i> Usuario y Contraseña
+            </button>
+            <button type="button" class="toggle-btn" data-mode="cookie">
+              <i class="fa-solid fa-cookie-bite"></i> Cookie de Sesión
+            </button>
+          </div>
+        </div>
+
+        <!-- Credentials Inputs (Default) -->
+        <div class="auth-panel active" id="panel-credentials">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="username">Usuario Moodle</label>
+              <div class="input-icon-wrapper">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input 
+                  type="text" 
+                  id="username" 
+                  name="username" 
+                  placeholder="43538582L"
+                  autocomplete="username"
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <div class="input-icon-wrapper">
+                <i class="fa-solid fa-lock input-icon"></i>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  placeholder="••••••••"
+                  autocomplete="current-password"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cookie Input -->
+        <div class="auth-panel" id="panel-cookie">
+          <div class="form-group">
+            <label for="sessionCookie">Cookie MoodleSession</label>
+            <div class="input-icon-wrapper">
+              <i class="fa-solid fa-cookie input-icon"></i>
+              <input 
+                type="text" 
+                id="sessionCookie" 
+                name="sessionCookie" 
+                placeholder="Pega aquí el valor de MoodleSession"
+              >
+            </div>
+            <span class="helper-text">
+              <i class="fa-solid fa-circle-info"></i> Puedes copiar el valor de la cookie <code>MoodleSession</code> desde la pestaña Application/Storage (F12) de tu navegador si ya has iniciado sesión en la plataforma.
+            </span>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn" id="start-btn">
+          <span>Comenzar Descarga</span>
+          <i class="fa-solid fa-circle-arrow-down"></i>
+        </button>
+      </form>
+    </section>
+
+    <!-- Progress & Status Section -->
+    <section class="glass-card hidden" id="progress-section">
+      <div class="progress-header">
+        <h2 id="progress-title">Procesando Descarga...</h2>
+        <span class="percent-label" id="percent-text">0%</span>
+      </div>
+      
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+      </div>
+      
+      <div class="status-indicator">
+        <span class="pulse-dot"></span>
+        <span id="status-text">Iniciando tareas...</span>
+      </div>
+
+      <!-- Realtime Log Console -->
+      <div class="log-console-container">
+        <div class="log-console-header">
+          <span>Consola de Proceso</span>
+          <button id="clear-logs-btn" title="Limpiar"><i class="fa-solid fa-eraser"></i></button>
+        </div>
+        <div class="log-console" id="log-console">
+          <!-- Real-time lines will be appended here -->
+        </div>
+      </div>
+
+      <!-- Result Card -->
+      <div class="result-card hidden" id="result-card">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        <h3>¡Descarga Completa!</h3>
+        <p>Se han descargado todos los temas y recursos. Puedes bajarte el archivo ZIP con todo el temario a continuación.</p>
+        <a id="download-zip-btn" href="#" class="zip-btn" download>
+          <i class="fa-solid fa-file-zipper"></i>
+          <span>Descargar Temario Completo (ZIP)</span>
+        </a>
+      </div>
+
+      <!-- Action Buttons in progress mode -->
+      <div class="action-footer">
+        <button id="cancel-btn" class="btn btn-secondary">
+          <i class="fa-solid fa-xmark"></i> Cancelar / Volver
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer-info">
+    <p>Desarrollado con ❤️ para organizar tu temario académico. Asegúrate de respetar los derechos de autor de los materiales descargados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

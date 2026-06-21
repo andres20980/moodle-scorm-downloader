@@ -1,0 +1,16 @@
+{
+  "name": "moodle-scorm-downloader",
+  "version": "1.0.0",
+  "description": "Simple web app to download Moodle SCORM packages and resources as PDFs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "archiver": "^7.0.1"
+  }
+}

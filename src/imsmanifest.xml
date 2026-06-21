@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-03ce7889241c14edda1c7e905d156341" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+	<organizations default="ORG-9f69c7b4e2aa6fe64bd52d954e1309df">
+		<organization identifier="ORG-9f69c7b4e2aa6fe64bd52d954e1309df" structure="hierarchical">
+			<title>INTRODUCCIÓN AL CURSO</title>
+			<item identifier="ITEM-c9bce80317b74aedf553f4befcaffbbe" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_djR1Y3RxdUZ5dHBxM25GUUtjZXdMeG1GM1dMTXdEN0djNjlKeVlJQ2dJQSUzRA==&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Introducci%C3%B3n">
+				<title>Introducción</title>
+			</item>
+			<item identifier="ITEM-5d65df63c6ed405c2ce7dd9dd811ad3d" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_YTdwY1hiemk1Vmp1MTdhMnBHc3FzNEF4R1VUc1VjdHpSMWFzaiUyQmk4MElvJTNE&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Objetivos">
+				<title>Objetivos</title>
+			</item>
+			<item identifier="ITEM-6511ade55140f0e9a7a9e1931ed8e2be" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_Ujd4NiUyQmc2SFBuajl5bkMlMkYzQTJ6UHRhbkxHSDlCbmFPU3JzY1hGQ0xyeDglM0Q=&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Mapa%20Conceptual">
+				<title>Mapa Conceptual</title>
+			</item>
+			<item identifier="ITEM-f37de3c78a1c3bcf7a00ef3d66406202" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_VVdKM3lHWlQ2VFRKSnNWZHoyT1loeElqZSUyRjN4SFdscVFZbHNIaUNaeGRVJTNE&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Introducci%C3%B3n%20al%20Python">
+				<title>Introducción al Python</title>
+			</item>
+			<item identifier="ITEM-269430327cd1619388e6d729808e69f8" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_TE5BY3pLaSUyRnIzRWNzUW4zTHNuVmppbDFhb2RjOUtSdXY2aXJTeG5RRllvJTNE&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Librer%C3%ADa%20de%20Python%20para%20Machine%20Learning.">
+				<title>Librería de Python para Machine Learning.</title>
+			</item>
+			<item identifier="ITEM-d2123938c3f0035e99e74ea763b14398" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_Q3R5JTJGZnNJS2JndFpaUGlla3RUVVNmbyUyRmd0Q0NPTUR3azl6SGFWQSUyQlJFOCUzRA==&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Machine%20Learning.%20Introducci%C3%B3n.">
+				<title>Machine Learning. Introducción.</title>
+			</item>
+			<item identifier="ITEM-9abe376b2651b0e3bd585086d0a22e71" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=HTM_YmhRQiUyRmxWVTNVekh2SXhrJTJGa0RwNSUyQnh6THpiNlRia2dTMFBLaExKT0k3USUzRA==&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Recuerda">
+				<title>Recuerda</title>
+			</item>
+			<item identifier="ITEM-8588b00aa39de94d27d94a7f3ba2a974" isvisible="true" identifierref="RES-E99DCCBB0C3D579980405AC94EA4771F" parameters="?r=Q0dpdFlvTDRnU2laOHZxY3RUTm5PWGhBJTJGRzBlY3JpM0NZSjglMkJRTEw1QjVTeGxJb0NmWkQwekh6QklVRUc0STUzV003d3B3R1klMkJxcmdyQnVNVzRjd1ElM0QlM0Q=&amp;p=WSUyQmFLRnpNRTI1cSUyQnBnVjk4cGlLSmpDQXFYVFU2amFsZHZRTThmaURETXJ0Y280SnFrVGlOVjd1ZG1jUkMyWXA5eGd0dTNZZnd0TTBnT3ZEaXRYYURnJTNEJTNE&amp;v=EVA_Nnlza0ZlYUxBREVRYiUyQlNMeFdKU2xVQUdjZ1UzT2clMkZUQkNpVGhHYllkWm8lM0Q=&amp;c=SUxVamxkbzUlMkJuUmpocUVGWTdLR0VaR3JjcDVjR3BuUkZuJTJCJTJCYktXeWdKUSUzRA==&amp;t=Autoevaluaci%C3%B3n">
+				<title>Autoevaluación</title>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="RES-E99DCCBB0C3D579980405AC94EA4771F" type="webcontent" href="cargador.html" adlcp:scormtype="sco">
+			<file href="cargador.html" />
+		</resource>
+	</resources>
+</manifest>
